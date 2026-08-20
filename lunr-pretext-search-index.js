@@ -6,8 +6,8 @@ var ptx_lunr_docs = [
   "url": "#shorttitlelowercase",
   "type": "Article",
   "number": "",
-  "title": "The title of my groundbreaking paper",
-  "body": " The title of my groundbreaking paper     Simplify the following expressions.                Express as sums, differences, and multiples of basic logarithmic functions, such as , and .           \\newpage      Complete the following trig identities.               Given and is in the fourth quadrant, find , and .    \\medskip         "
+  "title": "DAY 1 WIP",
+  "body": " DAY 1 WIP     Simplify the following expressions.                Express as sums, differences, and multiples of basic logarithmic functions, such as , and .           \\newpage      Complete the following trig identities.               Given and is in the fourth quadrant, find , and .    \\medskip         "
 }
 ]
 
