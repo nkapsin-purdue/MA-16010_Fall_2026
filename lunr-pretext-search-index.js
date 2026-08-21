@@ -89,6 +89,123 @@ var ptx_lunr_docs = [
   "number": "2.8",
   "title": "",
   "body": "  Let . Again, at , is not defined since we are dividing by . This time, to find , we should evaluate the limit numerically.  We get the following table:               x  -1  -0.1  -0.01  0  0.01  0.1  1       f(x)  0.84  0.998  0.9999  not defined  0.9999  0.998  0.84         This time, even though the function isn't defined at , the right and left limits agree, and so we have   Graphically, this function will appear as other nice functions do, without any jumps, but there will be a hole at , where the function is not defined.   "
+},
+{
+  "id": "section-3",
+  "level": "1",
+  "url": "section-3.html",
+  "type": "Section",
+  "number": "3",
+  "title": "08\/28: Finding Limits Analytically",
+  "body": " 08\/28: Finding Limits Analytically   Last class, we defined limits and used numerical and graphical techniques to find them. Both of these techniques can be slow, so today we will introduce faster ways to determine limits for certain nice functions.   Warm-up Question   What is a limit? What does the statement mean? Try to come up with a 1-2 sentence description. Use casual language if it helps you understand the concept.      Continuous Functions  Last time, we saw that for some functions, finding a limit is as simple as plugging in the number we're approaching into the function. We introduce some terminology we can use for such functions:    We say that a function is continuous at (the point) if the following is true: In other words, when the limit of a function at a point is equal to the function at that point.  We say that a function is continuous if it is continuous at for every single choice of .    If we are every asked to compute the limit of a continuous function at a point, we can just evaluate the function at that point. Graphically, continuous functions are those that you can draw on a piece of paper in one stroke without lifting up your pen.  Some useful examples of common continuous functions that we will see:   All polynomials    Sine and Cosine          (For positive values of )       Solve      is a polynomial, so it's continuous. In particular, it is continuous at . Thus if , then for any , so in this case we have .     This example was an example of finding a limit analytically. We will say that we are finding a limit analytically when we are using any special technique or rule that allows us to solve a limit more concisely than writing a big numerical table or squinting at a graph.    Discontinuous Functions  We introduce several more of these rules below when finding :    evaluates to . This means that is not defined at , and that there is a vertical asymptote at instead. We will analyze the limits at from below (left) and above (right) to get more information, as illustrated by the following example.   Evaluate     Trying to evaluate would give us , so we need to check the sign of above and below (and close to it). Graphing , we see that it is negative to the left of and positive to the right, so will be negative to the left and positive to the right. Thus and , so the desired limit does not exist.     When a function shoots up vertically to infinity on both sides, or shoots down vertically to negative infinity on both sides, we allow ourselves to write or , respectively. This is a little handwavey, since \" \" is not a number that we can work with - what is important is that the limit describes the behavior of the function right around        evaluates to . In this case there might be a vertical asymptote at , but we can't be sure quite yet. To handle functions that give us this, we will try to reduce them into a simpler form that can be handled by another case.  In this course, we will only do this by factoring and cancelling. Once we're in one of the previous cases, we can compute the limit either by solving for or evaluating the left and right limits as before.   Find if it exists.     is a zero of both the numerator and denominator, so we are in the case. Factoring gives us , found by cancelling the matching factors in the numerator and the denominator. With this new simplification, - we are in the continuous case, so our limit is .     The fact that we reduced to a function which evaluated to a number at means that the original function had a hole there. If we simplified by cancellation and got something which evaluated to , this would mean we had a vertical asymptote and would have needed to use the techniques in the corresponding case.     Find if it exists.    This evaluates to , so we want to factor and cancel . Doing so yields , which evaluates to . Thus we need to check the limits from above and below (and close to ). We see that with , but with , , so just like the first example, the limit does not exist.        We may also work with piecewise functions, where we split a function up into parts depending on the value of the we put into it.     Find , if it exists, for     The function is split at , so we'll need to check both sides. Both the left side ( ) and the right side ( ) are continuous at , so we can solve analytically for the left and right limits. Both evaluate to , so the limit is . Graphically, the curves drawn by both sides link up at          Let   Find and , if they exist.  At , we are not at a boundary, and evaluates to a number, so the limit is . At , we need to check from the left and the right, ignoring , since the limit there doesn't care about the value of the function at that point. From the left, we can evaluate at to get the limit from the left as , but from the right, gives a limit of . Thus the limit of at does not exist.          "
+},
+{
+  "id": "section-3-2-2",
+  "level": "2",
+  "url": "section-3.html#section-3-2-2",
+  "type": "Question",
+  "number": "3.1",
+  "title": "Warm-up Question.",
+  "body": " Warm-up Question   What is a limit? What does the statement mean? Try to come up with a 1-2 sentence description. Use casual language if it helps you understand the concept.   "
+},
+{
+  "id": "def_3_1",
+  "level": "2",
+  "url": "section-3.html#def_3_1",
+  "type": "Definition",
+  "number": "3.2",
+  "title": "",
+  "body": "  We say that a function is continuous at (the point) if the following is true: In other words, when the limit of a function at a point is equal to the function at that point.  We say that a function is continuous if it is continuous at for every single choice of .   "
+},
+{
+  "id": "subsection-3_1-6",
+  "level": "2",
+  "url": "section-3.html#subsection-3_1-6",
+  "type": "Example",
+  "number": "3.3",
+  "title": "",
+  "body": "  Solve      is a polynomial, so it's continuous. In particular, it is continuous at . Thus if , then for any , so in this case we have .   "
+},
+{
+  "id": "subsection-3_1-8",
+  "level": "2",
+  "url": "section-3.html#subsection-3_1-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "analytically. "
+},
+{
+  "id": "subsection-3_2-2-2-1-1-7",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-2-2-1-1-7",
+  "type": "Example",
+  "number": "3.4",
+  "title": "",
+  "body": "  Evaluate     Trying to evaluate would give us , so we need to check the sign of above and below (and close to it). Graphing , we see that it is negative to the left of and positive to the right, so will be negative to the left and positive to the right. Thus and , so the desired limit does not exist.   "
+},
+{
+  "id": "subsection-3_2-2-2-1-1-8",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-2-2-1-1-8",
+  "type": "Remark",
+  "number": "3.5",
+  "title": "",
+  "body": " When a function shoots up vertically to infinity on both sides, or shoots down vertically to negative infinity on both sides, we allow ourselves to write or , respectively. This is a little handwavey, since \" \" is not a number that we can work with - what is important is that the limit describes the behavior of the function right around   "
+},
+{
+  "id": "subsection-3_2-2-2-2-2-2",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-2-2-2-2-2",
+  "type": "Example",
+  "number": "3.6",
+  "title": "",
+  "body": "  Find if it exists.     is a zero of both the numerator and denominator, so we are in the case. Factoring gives us , found by cancelling the matching factors in the numerator and the denominator. With this new simplification, - we are in the continuous case, so our limit is .   "
+},
+{
+  "id": "subsection-3_2-2-2-2-2-3",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-2-2-2-2-3",
+  "type": "Remark",
+  "number": "3.7",
+  "title": "",
+  "body": " The fact that we reduced to a function which evaluated to a number at means that the original function had a hole there. If we simplified by cancellation and got something which evaluated to , this would mean we had a vertical asymptote and would have needed to use the techniques in the corresponding case.  "
+},
+{
+  "id": "subsection-3_2-2-2-2-2-4",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-2-2-2-2-4",
+  "type": "Example",
+  "number": "3.8",
+  "title": "",
+  "body": "  Find if it exists.    This evaluates to , so we want to factor and cancel . Doing so yields , which evaluates to . Thus we need to check the limits from above and below (and close to ). We see that with , but with , , so just like the first example, the limit does not exist.   "
+},
+{
+  "id": "subsection-3_2-3",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "piecewise "
+},
+{
+  "id": "subsection-3_2-5",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-5",
+  "type": "Example",
+  "number": "3.9",
+  "title": "",
+  "body": "  Find , if it exists, for     The function is split at , so we'll need to check both sides. Both the left side ( ) and the right side ( ) are continuous at , so we can solve analytically for the left and right limits. Both evaluate to , so the limit is . Graphically, the curves drawn by both sides link up at    "
+},
+{
+  "id": "subsection-3_2-6",
+  "level": "2",
+  "url": "section-3.html#subsection-3_2-6",
+  "type": "Problem",
+  "number": "3.10",
+  "title": "",
+  "body": "     Let   Find and , if they exist.  At , we are not at a boundary, and evaluates to a number, so the limit is . At , we need to check from the left and the right, ignoring , since the limit there doesn't care about the value of the function at that point. From the left, we can evaluate at to get the limit from the left as , but from the right, gives a limit of . Thus the limit of at does not exist.        "
 }
 ]
 
