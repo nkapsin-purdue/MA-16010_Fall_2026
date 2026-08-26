@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2",
   "title": "08\/26: Finding Limits Numerically, One-Sided Limits, and Finding Limits Graphically",
-  "body": " 08\/26: Finding Limits Numerically, One-Sided Limits, and Finding Limits Graphically   A critical mathematical notion that we will be using in this course is the notion of a limit . Today, we introduce limits of functions, and discuss how to calculate them.    Defining Limits  So far in math, you have probably seen functions used as a basic in-out machine; you put some number into the function, and it spits out another number. Stick comes out. In this lesson, we will start to consider what these functions look like around a given number.    The Left Limit  is defined as the value that the function approaches as approaches the number from below, or from the left, if it exists.  Similarly, the Right Limit , is the value approaches as approaches from above, or from the right, if it exists.      Evaluate the following limits numerically:     We evaluate limits numerically by plugging in values near the point that is approaching and observing to what number the given function appears to be approaching. In this case, we can plug in values closer and closer to . From below , or from the left, we can pick numbers like . From above , or from the right, we can pick numbers like . From these, we can make a table like the following:                     x  0  0.5  0.9  0.99  0.999  0.9999  1  1.0001  1.001  1.01  1.1  1.5  2       f(x)  3  3.5  4.62  4.96  4.996  4.9996  -  5.0004  5.004  5.04  5.4  7.5  11         Assessing the table, we can see that from the left, our function outputs are approaching , and from the right, our function outputs are also approaching , and so we have that:       If the left and right limits of a function are equal, then the Limit  exists and is their value. Otherwise, the limit does not exist.    In the previous example, since both the left and right limits were the same, we would have that     In the previous question, we could have just gotten the answer by plugging the number we were given directly into the function. This leads to the question, for need of politer phrasing, \"what's the point of finding a limit?\"  We can start answer this by asking a different question: When does a limit not exist? Graphically, how does a function appear when it has a limit that doesn't exist somewhere?    Limits don't exist when the right and left limits don't agree, i.e. when the function approaches a different number from the left than it does from the right. Graphically, this is usually where there is a jump in the graph of at the point at which we want to evaluate the limit.     The value of depends on the values of close to , but does not depend on . In fact, we don't require to be defined at at all.     Calculate the left and right limits to determine whether the following limit exists:     Since does not exist, plugging in won't work. If is negative, then . If is positive, then . So, we will have that: Since the left and right limits do not agree, the limit does not exist.  Graphically, there is a jump at , where the horizontal line on suddenly switches to the line , from right to left.      Let . Again, at , is not defined since we are dividing by . This time, to find , we should evaluate the limit numerically.  We get the following table:               x  -1  -0.1  -0.01  0  0.01  0.1  1       f(x)  0.84  0.998  0.9999  not defined  0.9999  0.998  0.84         This time, even though the function isn't defined at , the right and left limits agree, and so we have   Graphically, this function will appear as other nice functions do, without any jumps, but there will be a hole at , where the function is not defined.    Some practice problems:     Let . Evaluate numerically, or state that it does not exist.    Let . Evaluate numerically, or state that it does not exist.    Let . Evaluate numerically, or state that it does not exist.      "
+  "body": " 08\/26: Finding Limits Numerically, One-Sided Limits, and Finding Limits Graphically   A critical mathematical notion that we will be using in this course is the notion of a limit . Today, we introduce limits of functions, and discuss how to calculate them.    Defining Limits  So far in math, you have probably seen functions used as a basic in-out machine; you put some number into the function, and it spits out another number. Stick comes out. In this lesson, we will start to consider what these functions look like around a given number.    The Left Limit  is defined as the value that the function approaches as approaches the number from below, or from the left, if it exists.  Similarly, the Right Limit , is the value approaches as approaches from above, or from the right, if it exists.    A way to think about it: as the values get close to on the -axis, the values get close to the limit on the -axis.    Evaluate the following limits numerically:     We evaluate limits numerically by plugging in values near the point that is approaching and observing to what number the given function appears to be approaching. In this case, we can plug in values closer and closer to . From below , or from the left, we can pick numbers like . From above , or from the right, we can pick numbers like . From these, we can make a table like the following:                     x  0  0.5  0.9  0.99  0.999  0.9999  1  1.0001  1.001  1.01  1.1  1.5  2       f(x)  3  3.5  4.62  4.96  4.996  4.9996  -  5.0004  5.004  5.04  5.4  7.5  11         Assessing the table, we can see that from the left, our function outputs are approaching , and from the right, our function outputs are also approaching , and so we have that:    A graph showing how the left limit is calculated numerically.   The red curve is . The dotted green lines show where on the curve we are taken by plugging in numbers progressively closer to from below, i.e. from the left. The dotted blue lines show that the limit is on the curve when we finally get to .        If the left and right limits of a function are equal, then the Limit  exists and is their value. Otherwise, the limit does not exist.    In the previous example, since both the left and right limits were the same, we would have that     In the previous question, we could have just gotten the answer by plugging the number we were given directly into the function. This leads to the question, for need of politer phrasing, \"what's the point of finding a limit?\"  We can start answer this by asking a different question: When does a limit not exist? Graphically, how does a function appear when it has a limit that doesn't exist somewhere?    Limits don't exist when the right and left limits don't agree, i.e. when the function approaches a different number from the left than it does from the right. Graphically, this is usually where there is a jump in the graph of at the point at which we want to evaluate the limit.     The value of depends on the values of close to , but does not depend on . In fact, we don't require to be defined at at all. We'll see an example of this in the next limit.     Calculate the left and right limits to determine whether the following limit exists:     Since does not exist, plugging in won't work. If is negative, then . If is positive, then . So, we will have that: Since the left and right limits do not agree, the limit does not exist.  Graphically, there is a jump at , where the horizontal line on suddenly switches to the line , from right to left.   A graph showing how the two limits from different directions are unequal.   The red curve is . The open circles at the ends of the lines indicate that the function is not defined at . From the left, the curve approaches , and from the right, the curve approaches         Let . Again, at , is not defined since we are dividing by . This time, to find , we should evaluate the limit numerically.  We get the following table:               x  -1  -0.1  -0.01  0  0.01  0.1  1       f(x)  0.84  0.998  0.9999  not defined  0.9999  0.998  0.84         This time, even though the function isn't defined at , the right and left limits agree, and so we have   Graphically, this function will appear as other nice functions do, without any jumps, but there will be a hole at , where the function is not defined.   A graph of    The red curve is . The left and right of both converge to , despite the fact that the function is not defined there.      Some practice problems:     Let . Evaluate numerically, or state that it does not exist.    Let . Evaluate numerically, or state that it does not exist.    Let . Evaluate numerically, or state that it does not exist.      "
 },
 {
   "id": "section-2-2-1",
@@ -37,13 +37,13 @@ var ptx_lunr_docs = [
   "body": "  The Left Limit  is defined as the value that the function approaches as approaches the number from below, or from the left, if it exists.  Similarly, the Right Limit , is the value approaches as approaches from above, or from the right, if it exists.   "
 },
 {
-  "id": "subsection-3-4",
+  "id": "subsection-3-5",
   "level": "2",
-  "url": "section-2.html#subsection-3-4",
+  "url": "section-2.html#subsection-3-5",
   "type": "Example",
   "number": "2.2",
   "title": "",
-  "body": "  Evaluate the following limits numerically:     We evaluate limits numerically by plugging in values near the point that is approaching and observing to what number the given function appears to be approaching. In this case, we can plug in values closer and closer to . From below , or from the left, we can pick numbers like . From above , or from the right, we can pick numbers like . From these, we can make a table like the following:                     x  0  0.5  0.9  0.99  0.999  0.9999  1  1.0001  1.001  1.01  1.1  1.5  2       f(x)  3  3.5  4.62  4.96  4.996  4.9996  -  5.0004  5.004  5.04  5.4  7.5  11         Assessing the table, we can see that from the left, our function outputs are approaching , and from the right, our function outputs are also approaching , and so we have that:    "
+  "body": "  Evaluate the following limits numerically:     We evaluate limits numerically by plugging in values near the point that is approaching and observing to what number the given function appears to be approaching. In this case, we can plug in values closer and closer to . From below , or from the left, we can pick numbers like . From above , or from the right, we can pick numbers like . From these, we can make a table like the following:                     x  0  0.5  0.9  0.99  0.999  0.9999  1  1.0001  1.001  1.01  1.1  1.5  2       f(x)  3  3.5  4.62  4.96  4.996  4.9996  -  5.0004  5.004  5.04  5.4  7.5  11         Assessing the table, we can see that from the left, our function outputs are approaching , and from the right, our function outputs are also approaching , and so we have that:    A graph showing how the left limit is calculated numerically.   The red curve is . The dotted green lines show where on the curve we are taken by plugging in numbers progressively closer to from below, i.e. from the left. The dotted blue lines show that the limit is on the curve when we finally get to .     "
 },
 {
   "id": "def-",
@@ -55,40 +55,40 @@ var ptx_lunr_docs = [
   "body": "  If the left and right limits of a function are equal, then the Limit  exists and is their value. Otherwise, the limit does not exist.   "
 },
 {
-  "id": "subsection-3-7",
+  "id": "subsection-3-8",
   "level": "2",
-  "url": "section-2.html#subsection-3-7",
+  "url": "section-2.html#subsection-3-8",
   "type": "Question",
   "number": "2.5",
   "title": "",
   "body": "  In the previous question, we could have just gotten the answer by plugging the number we were given directly into the function. This leads to the question, for need of politer phrasing, \"what's the point of finding a limit?\"  We can start answer this by asking a different question: When does a limit not exist? Graphically, how does a function appear when it has a limit that doesn't exist somewhere?    Limits don't exist when the right and left limits don't agree, i.e. when the function approaches a different number from the left than it does from the right. Graphically, this is usually where there is a jump in the graph of at the point at which we want to evaluate the limit.   "
 },
 {
-  "id": "subsection-3-8",
-  "level": "2",
-  "url": "section-2.html#subsection-3-8",
-  "type": "Remark",
-  "number": "2.6",
-  "title": "",
-  "body": " The value of depends on the values of close to , but does not depend on . In fact, we don't require to be defined at at all.  "
-},
-{
   "id": "subsection-3-9",
   "level": "2",
   "url": "section-2.html#subsection-3-9",
-  "type": "Example",
-  "number": "2.7",
+  "type": "Remark",
+  "number": "2.6",
   "title": "",
-  "body": "  Calculate the left and right limits to determine whether the following limit exists:     Since does not exist, plugging in won't work. If is negative, then . If is positive, then . So, we will have that: Since the left and right limits do not agree, the limit does not exist.  Graphically, there is a jump at , where the horizontal line on suddenly switches to the line , from right to left.   "
+  "body": " The value of depends on the values of close to , but does not depend on . In fact, we don't require to be defined at at all. We'll see an example of this in the next limit.  "
 },
 {
   "id": "subsection-3-10",
   "level": "2",
   "url": "section-2.html#subsection-3-10",
   "type": "Example",
+  "number": "2.7",
+  "title": "",
+  "body": "  Calculate the left and right limits to determine whether the following limit exists:     Since does not exist, plugging in won't work. If is negative, then . If is positive, then . So, we will have that: Since the left and right limits do not agree, the limit does not exist.  Graphically, there is a jump at , where the horizontal line on suddenly switches to the line , from right to left.   A graph showing how the two limits from different directions are unequal.   The red curve is . The open circles at the ends of the lines indicate that the function is not defined at . From the left, the curve approaches , and from the right, the curve approaches      "
+},
+{
+  "id": "subsection-3-11",
+  "level": "2",
+  "url": "section-2.html#subsection-3-11",
+  "type": "Example",
   "number": "2.8",
   "title": "",
-  "body": "  Let . Again, at , is not defined since we are dividing by . This time, to find , we should evaluate the limit numerically.  We get the following table:               x  -1  -0.1  -0.01  0  0.01  0.1  1       f(x)  0.84  0.998  0.9999  not defined  0.9999  0.998  0.84         This time, even though the function isn't defined at , the right and left limits agree, and so we have   Graphically, this function will appear as other nice functions do, without any jumps, but there will be a hole at , where the function is not defined.   "
+  "body": "  Let . Again, at , is not defined since we are dividing by . This time, to find , we should evaluate the limit numerically.  We get the following table:               x  -1  -0.1  -0.01  0  0.01  0.1  1       f(x)  0.84  0.998  0.9999  not defined  0.9999  0.998  0.84         This time, even though the function isn't defined at , the right and left limits agree, and so we have   Graphically, this function will appear as other nice functions do, without any jumps, but there will be a hole at , where the function is not defined.   A graph of    The red curve is . The left and right of both converge to , despite the fact that the function is not defined there.     "
 },
 {
   "id": "section-3",
